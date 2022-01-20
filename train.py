@@ -1,15 +1,18 @@
 from pytorch_lightning.loops import Loop
 from utils import get_batch, transfomer_mask
 
+import torch
+
 class TrainingEpochLoop(Loop):
 
-    def __init__(self, model, lossfunc, optimizer, data_iter, bptt, device="cpu"):
+    def __init__(self, model, lossfunc, optimizer, data_iter, bptt, device="cpu", clip=0.25):
         super().__init__()
         self.model = model
         self.optimizer = optimizer
         self.data_iter = data_iter
         self.batch_idx = 0
         self.bptt = bptt
+        self.clip = clip
         self.device = device
         # Model
         self.model.train()
@@ -41,5 +44,10 @@ class TrainingEpochLoop(Loop):
 
         if self.batch_idx %10==0:
           print(loss.item())
+
         loss.backward()
+
+        # Clip the gradient
+        torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.clip)
+
         self.optimizer.step()
