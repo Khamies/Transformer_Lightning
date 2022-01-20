@@ -59,4 +59,4 @@ optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
 if __name__ == "__main__":
     for epoch in range(10):
-        TrainingEpochLoop(model,loss, optimizer, train_data, bptt).run()
+        TrainingEpochLoop(model,loss, optimizer, train_data, bptt, clip=training_setting["clip"]).run()
