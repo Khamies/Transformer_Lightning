@@ -85,4 +85,4 @@ Follow me on [Linkedin](https://www.linkedin.com/in/khamiesw/)!
 
 ### License 
 
-![](https://img.shields.io/github/license/khamies/Transformer_Lightning)
+![](https://img.shields.io/github/license/Khamies/Transformer_Lightning)
