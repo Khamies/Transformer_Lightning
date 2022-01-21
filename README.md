@@ -46,7 +46,7 @@ And you should be ready to go to play with code and build upon it!
 
 The model is trained on `10 epochs` using Adam as an optimizer with a `learning rate = 0.001` and `batch size = 32`, you can find all the model settings in [settings.py]( https://github.com/Khamies/Transformer_Lightning/blob/main/settings.py). Here is the loss curve for the training step:
 
-- **Negative Likelihood Loss**
+- **Cross Entropy Loss**
 
   <img src="./media/train_loss.jpg" align="center" height="300" width="500" >
 
