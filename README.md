@@ -1,5 +1,5 @@
 # TLT: Transformer_Lightning <img src="./media/light.png" align="center" height="50" width="50" >
-A simple implementation of a transformer based language model using Pytorch-Lightning framework.
+
 
 <img src="./media/transformer.jpg" align="center" height="750" width="800" >
 
