@@ -10,13 +10,12 @@
 - [**Run the code**](#Run-the-code)
 - **[Training](#Training)**
 - **[Sample Generation](#Sample-Generation)**
-- **[Play with the model](#Play-with-the-model)**
 - **[Connect with me](#Connect-with-me)**
 - **[License](#License)** 
 
 ### Introduction
 
-This is an implementation of a transformer based language model using [Pytorch-Lightning framework](https://www.pytorchlightning.ai/). The model consists of two transformer layers with embedding and linear layers. 
+This is an implementation of a transformer based language model using [Pytorch-Lightning framework](https://www.pytorchlightning.ai/). The model consists of two transformer layers with 2 heads each combined with embedding and linear layers. The code uses pytorch-lightning framework that is built for fast research prototyping. Although the code does not leverage all the features of the lightning framework, but it has achieved good result in the language modelling task. For learning purposes, a Pytorch classical version from this project is also provided [here](https://colab.research.google.com/drive/1zRm0tfD2gYyL2WNd6o_mVC2IY3prAzPV?usp=sharing) (inspired from Pytorch team  :heart:).
 
 ### Setup
 
