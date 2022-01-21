@@ -25,6 +25,10 @@ The code is using `pipenv` as a virtual environment and package manager. To run 
 - `$ cd Transformer_Lightning`
 - `$ pipenv install`
 
+or
+
+- `$ pip install requirements.txt `
+
 And you should be ready to go to play with code and build upon it!
 
 ### Run the code
