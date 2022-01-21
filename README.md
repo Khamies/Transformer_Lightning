@@ -1,4 +1,4 @@
-# TLT: Transformer-Lightning Language Model <img src="./media/light.png" align="center" height="50" width="50" >
+# TLT : Transformer-Lightning Language Model <img src="./media/light.png" align="center" height="50" width="50" >
 
 
 <img src="./media/transformer.jpg" align="center" height="750" width="800" >
@@ -22,9 +22,9 @@ This is an implementation of a transformer based language model using [Pytorch-L
 
 The code is using `pipenv` as a virtual environment and package manager. To run the code, all you need is to install the necessary dependencies. open the terminal and type:
 
-- `git clone https://github.com/Khamies/LSTM-Language-Generator.git` 
-- `cd LSTM-Language-Generator`
-- `pipenv install`
+- `$ git clone https://github.com/Khamies/Transformer_Lightning.git` 
+- `$ cd Transformer_Lightnin`
+- `$ pipenv install`
 
 And you should be ready to go to play with code and build upon it!
 
@@ -33,12 +33,14 @@ And you should be ready to go to play with code and build upon it!
 - To train the model, run: `python main.py`
 
 - To train the model with specific arguments, run: `python main.py --batch_size=64`. The following command-line arguments are available:
-  - Batch size: `--batch_size`
+  - Train batch size: `--bsz_train`
+  - Test batch size: `--bsz_test`
   - bptt: `--bptt`
   - Learning rate: `--lr`
   - Embedding size: `--embed_size`
-  - Hidden size: `--hidden_size`
-  - Latent size: `--latent_size`
+  - Size of FeedForward Neural Network (1st layer): `--ffnn_size`
+  - Attention Heads: `--nhead`
+  - Transformer Layers: `--nlayers`
 
 ### Training
 
