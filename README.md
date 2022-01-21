@@ -23,7 +23,7 @@ This is an implementation of a transformer based language model using [Pytorch-L
 The code is using `pipenv` as a virtual environment and package manager. To run the code, all you need is to install the necessary dependencies. open the terminal and type:
 
 - `$ git clone https://github.com/Khamies/Transformer_Lightning.git` 
-- `$ cd Transformer_Lightnin`
+- `$ cd Transformer_Lightning`
 - `$ pipenv install`
 
 And you should be ready to go to play with code and build upon it!
@@ -44,35 +44,31 @@ And you should be ready to go to play with code and build upon it!
 
 ### Training
 
-The model is trained on `10 epochs` using Adam as an optimizer with a `learning rate = 0.001` and `batch size = 32`, you can find all the model settings in [settings.py](https://github.com/Khamies/LSTM-Language-Generator/blob/main/settings.py). Here is the loss curve for the training step:
+The model is trained on `10 epochs` using Adam as an optimizer with a `learning rate = 0.001` and `batch size = 32`, you can find all the model settings in [settings.py]( https://github.com/Khamies/Transformer_Lightning/blob/main/settings.py). Here is the loss curve for the training step:
 
 - **Negative Likelihood Loss**
 
-  <img src="/home/waleed/Desktop/papers/Projects/LSTM-Language-Generator/media/nll_loss.jpg" align="center" height="300" width="500" >
+  <img src="./media/train_loss.jpg" align="center" height="300" width="500" >
 
 ### Sample Generation
 
 Here are some generated samples from the model:
 
 ```markdown
-he said <pad> is n't expected to be the first quarter of
-the company said will be used to repay the company's
+<time> warner owns n million francs.
+<media> concern said it is a share n million.
 ```
 
-## Play with the model
-
-To play with the model, a jupyter notebook has been provided, you can find it [here](https://github.com/Khamies/LSTM-Language-Generator/blob/main/Play_with_model.ipynb)
-
-### Citation
+## Citation
 
 > ```
-> @misc{Khamies2021LSTM-Language-Generator,
+> @misc{Khamies2021Transformer_Lightning,
 > author = {Khamies, Waleed},
-> title = {A PyTorch Implementation for an LSTM-based language model},
+> title = {A pytorch implementation of transformer based language model using Pytorch-Lightning framework.},
 > year = {2021},
 > publisher = {GitHub},
 > journal = {GitHub repository},
-> howpublished = {\url{https://github.com/Khamies/LSTM-Language-Generator}},
+> howpublished = {\url{ https://github.com/Khamies/Transformer_Lightning}},
 > }
 > ```
 
@@ -86,4 +82,4 @@ Follow me on [Linkedin](https://www.linkedin.com/in/khamiesw/)!
 
 ### License 
 
-![](https://img.shields.io/github/license/khamies/LSTM-Language-Generator)
+![](https://img.shields.io/github/license/khamies/Transformer_Lightning)
